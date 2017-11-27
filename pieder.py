@@ -15,14 +15,9 @@ import base64#added so program can run in either python2 or python3
 
 from itertools import tee, islice, chain, izip
 
-def previous_and_next(some_iterable):
-    prevs, items, nexts = tee(some_iterable, 3)
-    prevs = chain([None], prevs)
-    nexts = chain(islice(nexts, 1, None), [None])
-    return izip(prevs, items, nexts)
-
 def bingo():
     # Things to do when a match has been found
+    print ('BINGO!!')
     return
 
 def main():
