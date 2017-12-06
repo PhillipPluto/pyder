@@ -1,0 +1,33 @@
+ <p class="result-info">
+        <span class="icon icon-star" role="button">
+            <span class="screen-reader-text">favorite this post</span>
+        </span>
+
+            <time class="result-date" datetime="2017-11-30 17:56" title="Thu 30 Nov 05:56:34 PM">Nov 30</time>
+
+
+        <a href="https://austin.craigslist.org/pts/d/93-lexus-gs300-2jz-motor/6407492902.html" data-id="6407492902" class="result-title hdrlnk">93 lexus gs300 2jz motor</a>
+
+
+        <span class="result-meta">
+                <span class="result-price">$2000</span>
+
+
+                <span class="result-hood"> (E austin)</span>
+
+                <span class="result-tags">
+                    <span class="maptag" data-pid="6407492902">map</span>
+                </span>
+
+                <span class="banish icon icon-trash" role="button">
+                    <span class="screen-reader-text">hide this posting</span>
+                </span>
+
+            <span class="unbanish icon icon-trash red" role="button" aria-hidden="true"></span>
+            <a href="#" class="restore-link">
+                <span class="restore-narrow-text">restore</span>
+                <span class="restore-wide-text">restore this posting</span>
+            </a>
+
+        </span>
+    </p>
