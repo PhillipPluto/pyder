@@ -13,7 +13,7 @@ class Result :
     def __init__ (self, id, name, price, date, url):
         self.id = id
         self.name = name
-        self.name = price
+        self.price = price
         self.date = date
         self.url = url
 
@@ -21,16 +21,13 @@ class Result :
 def parser(file): # Iterate and parse html file
     count = 0
     line = file.readline()
+    result = {}
     while line:
-        result = re.search('class="result-info"', line)
-        while result:
+        if re.search('class="result-info"', line): #returns bool
             count += 1
-            
-            result = False
-        line = file.readline()
-    print (count)
-
-
+        if re.search('class="result-date"', line):
+            re.match('datetime='
+            result.update('date':date)
 
 def gethtml(url, query):    
     url += query
