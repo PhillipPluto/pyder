@@ -8,26 +8,29 @@ import htmllib
 import re #regular expresions
 #import traceback
 
+
 class Result :
     type = 'for sale'
-    def __init__ (self, id, name, price, date, url):
-        self.id = id
-        self.name = name
-        self.price = price
-        self.date = date
-        self.url = url
-
-
+    def __init__ (self):        
+        data = {}
+                
 def parser(file): # Iterate and parse html file
     count = 0
     line = file.readline()
-    result = {}
+    result = [] # list of Result objects 
     while line:
         if re.search('class="result-info"', line): #returns bool
+            result.append(Result())
             count += 1
         if re.search('class="result-date"', line):
-            re.match('datetime='
-            result.update('date':date)
+            m = re.match('(.*datetime=)"(.*)" (title=.*)', line) #returns list of group() matches
+            result[count-1].datetime = m.group(2)
+            #print(result[count-1].datetime)
+        if re.search (r'<a href="https://austin.craigslist.org', line):
+            
+        line = file.readline()
+
+
 
 def gethtml(url, query):    
     url += query
